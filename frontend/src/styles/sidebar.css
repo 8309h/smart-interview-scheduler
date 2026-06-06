@@ -21,10 +21,28 @@
   margin-bottom: 12px;
 }
 
-.sidebar__section a {
+.sidebar__section a,
+.sidebar__section span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   color: #334155;
+  font-weight: 500;
+}
+
+.sidebar__section a.active {
+  color: #4338ca;
 }
 
 .sidebar__section a:hover {
   color: #1d4ed8;
+}
+
+.sidebar__section li.disabled {
+  color: #94a3b8;
+}
+
+.sidebar__section li.disabled small {
+  font-size: 0.8rem;
+  color: #64748b;
 }

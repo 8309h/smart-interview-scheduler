@@ -1,0 +1,30 @@
+.loader-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+  padding: 24px;
+}
+
+.loader-spinner {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 6px solid rgba(99, 102, 241, 0.25);
+  border-top-color: #4338ca;
+  animation: spin 1s linear infinite;
+}
+
+.loader-shell p {
+  color: #475569;
+  max-width: 320px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

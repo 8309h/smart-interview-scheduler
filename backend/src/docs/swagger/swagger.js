@@ -11,6 +11,20 @@ const options = {
     servers: [
       { url: 'http://localhost:5000/api/v1', description: 'Local server' },
     ],
+    components: {
+      securitySchemes: {
+        bearerAuth: {
+          type: 'http',
+          scheme: 'bearer',
+          bearerFormat: 'JWT',
+        },
+      },
+    },
+    security: [
+      {
+        bearerAuth: [],
+      },
+    ],
   },
   apis: ['./src/routes/**/*.js', './src/controllers/**/*.js'],
 };

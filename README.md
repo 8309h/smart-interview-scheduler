@@ -29,6 +29,13 @@ cd backend
 npm run dev
 ```
 
+### Tests
+
+```bash
+cd backend
+npm test
+```
+
 ### API
 
 - Health check: `GET http://localhost:5000/api/v1/health`

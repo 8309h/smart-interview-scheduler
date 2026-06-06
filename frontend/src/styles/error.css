@@ -1,0 +1,27 @@
+.error-shell {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.error-card {
+  max-width: 520px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+}
+
+.error-card h2 {
+  margin: 0 0 16px;
+  color: #111827;
+}
+
+.error-card p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.75;
+}
